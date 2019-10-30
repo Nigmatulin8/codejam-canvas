@@ -1,0 +1,164 @@
+$color: #f14e4e;
+$mainFont: 'Roboto';
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 5px 5px #bbb;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+.canvas {
+	border: 1px solid black;
+	width: 512px;
+	height: 512px;
+	image-rendering: pixelated;
+}
+
+.radio_heading {
+	font-size: 18px;
+}
+
+.list {
+	list-style: none;
+
+	&_item {
+		font: normal 16px $mainFont;
+		padding: 20px 0 20px 15px;
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(-100%, -50%);
+		}
+	}
+}
+
+.label {
+	font: normal 16px $mainFont;
+	margin-left: 5px;
+}
+
+.title {
+	font-size: 20px;
+	font-family: $mainFont;
+	font-weight: 500;
+	flex-shrink: 0;
+}
+
+.menu_panel {
+	width: 228px;
+	height: 246px;
+	box-shadow: 1px 2px 2px #bbb, -1px 0 2px #bbb;
+}
+
+.nav_icon {
+	background: url('./images/navicon.svg');
+	width: 40px;
+	height: 40px;
+	margin-right: 30px;
+}
+
+.icon {
+	background: url('./images/menuicon.svg');
+	width: 12px;
+	height: 24px;
+}
+
+.divider {
+	flex: 1;
+}
+
+.radio_item {
+	margin-bottom: 10px;
+}
+
+#bucket::before {
+	background: url('./images//bucket.svg');
+}
+
+#color::before {
+	background: url('./images/dropper.svg');
+}
+
+#move::before {
+	background: url('./images/cross.svg');
+}
+
+#transform::before {
+	background: url('./images/arrows.svg');
+}
+
+#current_color::before {
+	border-radius: 50%;
+	background-color: #c4c4c4;
+	width: 20px;
+	height: 20px;
+}
+
+#previous_color::before {
+	border-radius: 50%;
+	background-color: #41f795;
+	width: 20px;
+	height: 20px;
+}
+
+#red_color::before {
+	border-radius: 50%;
+	background-color: #f74141;
+	width: 20px;
+	height: 20px;
+}
+
+#blue_color::before {
+	border-radius: 50%;
+	background-color: #41b5f7;
+	width: 20px;
+	height: 20px;
+}
+
+.action_panel {
+	margin-bottom: 20px;
+}
+
+.resolution {
+	width: 300px;
+	height: 500px;
+	box-shadow: 1px 2px 2px #bbb, -1px 0 2px #bbb;
+
+	.item {
+		box-sizing: border-box;
+		width: inherit;
+		height: 3em;
+  		line-height: 3em;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover {
+			background: rgba(99, 99, 99, 0.3);
+		}
+	}
+}
+
+.active {
+	background: rgba(99, 99, 99, 0.3);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codejam Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+                <div class="nav_icon"></div>
+                <h1 class="title">CodeJam - Canvas</h1>
+                <div class="divider"></div>
+                <div class="icon"></div>
+        </header>
+        <main>
+            <div>
+                <div class="menu_panel action_panel">
+                    <ul class="list">
+                        <li class="list_item" id="bucket">Paint bucket</li>
+                        <li class="list_item" id="color">Choose color</li>
+                        <li class="list_item" id="move">Move</li>
+                        <li class="list_item" id="transform">Transform</li>
+                     </ul>
+                </div>
+                <div class="menu_panel">
+                    <ul class="list">
+                        <li class="list_item" id="current_color">Current color</li>
+                        <li class="list_item" id="previous_color">Previous color</li>
+                        <li class="list_item" id="red_color">Red</li>
+                        <li class="list_item" id="blue_color">Blue</li>
+                    </ul>
+                </div>
+            </div>
+            <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+
+            <div class="resolution">
+                <div class="item" data-size="4x4">4x4</div>
+                <div class="item" data-size="32x32">32x32</div>
+                <div class="item" data-size="256x256">256x256</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
