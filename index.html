@@ -6,10 +6,20 @@
     <title>Codejam Canvas</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
-    
 </head>
-<body>
-    <div class="wrapper">
+<body class="page">
+    <header class="header page__header">
+        <div class="header__inner">
+            <div class="header__col">
+                <button class="header__menu">Menu</button>
+                <h1 class="header__title">Title</h1>
+            </div>
+            <div class="header__col">
+                <button class="header__more">More</button>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="wrapper">
         <header>
                 <div class="nav_icon"></div>
                 <h1 class="title">CodeJam - Canvas</h1>
@@ -37,13 +47,40 @@
             </div>
             <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
 
-            <div class="resolution">
-                <div class="item" data-size="4x4">4x4</div>
-                <div class="item" data-size="32x32">32x32</div>
-                <div class="item" data-size="256x256">256x256</div>
+            <div class="actions">
+                <div class="actions__items">
+                    <button
+                        class="actions__item"
+                        data-type="pixels"
+                        data-url="./src/data/4x4.json"
+                    >
+                        4x4
+                    </button>
+                    <button
+                        class="actions__item"
+                        data-type="pixels"
+                        data-url="./src/data/32x32.json"
+                    >
+                        32x32
+                    </button>
+                    <button
+                        class="actions__item"
+                        data-type="pixels"
+                        data-url="./src/data/4x4-1.json"
+                    >
+                        4x4-1
+                    </button>
+                    <button
+                        class="actions__item"
+                        data-type="image"
+                        data-url="./src/data/image.png"
+                    >
+                        256x256
+                    </button>
+                </div>
             </div>
         </main>
-    </div>
+    </div> -->
 
     <script src="dist/main.js"></script>
 </body>
